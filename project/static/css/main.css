@@ -1,0 +1,90 @@
+/* 전체 초기화: 여백 문제 방지 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* 여백과 테두리를 포함한 크기 계산 */
+}
+
+/* Google Fonts 사용: Poppins */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif; /* 기본 폰트 설정 */
+    background-color: #000000;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.container {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    min-height: 1080px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #000000;
+}
+
+.hero {
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-title {
+    font-size: calc(50px * (100vw / 1920));
+    color: #FFFFFF;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn-hover {
+    width: 400px;
+    height: 100px;
+    font-size: 52px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    background-size: 300% 100%;
+    border: none;
+    border-radius: 30px;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 4px 15px 0 #31c4bebf;
+}
+
+.btn-hover.color-1 {
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+}
+/*
+.news {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.news-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.news-card {
+    width: 255px;
+    margin: 10px;
+    padding: 16px;
+    background: #000000;
+    border-radius: 4px;
+}
+*/

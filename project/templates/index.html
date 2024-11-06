@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI 강의 플랫폼 - 메인 페이지</title>
+  <!-- Google Fonts 링크 추가 -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}">
+</head>
+<body>
+  <div class="container">
+    <header class="navbar">
+      <div class="logo">AIng</div>
+      <div class="avatar">
+          <img src="{{ url_for('static', filename='images/user.png') }}" alt="User Icon">
+      </div>
+    </header>
+
+    <section class="hero">
+      <h1 class="hero-title">강의실 바로가기</h1>
+      <div class="buttons">
+        <button class="btn-hover color-1" onclick="location.href='/lecture'">Start</button>
+      </div>
+    </section>
+<!--
+    <section class="news">
+      <h2>뉴스</h2>
+      <div class="news-container">
+        <div class="news-card">
+          <img src="{{ url_for('static', filename='images/image.png') }}" alt="뉴스 이미지">
+          <p>코딩 파트너스 - 백엔드 시스템 개발 담당</p>
+        </div>
+      </div>
+    </section> -->
+  </div>
+</body>
+</html>

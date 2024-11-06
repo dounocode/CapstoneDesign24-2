@@ -1,0 +1,42 @@
+  /* 챗봇 모달 스타일 */
+  .modal {
+    display: none; /* 기본적으로 숨김 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 반투명 배경 */
+    backdrop-filter: blur(5px); /* 블러 효과 */
+    z-index: 1000; /* 다른 요소 위에 표시 */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* 챗봇 모달 콘텐츠 */
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    height: 80%;
+    max-height: 600px;
+    position: relative;
+  }
+  
+  /* 닫기 버튼 */
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* 챗봇 프레임 */
+  .chatbot-frame {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
