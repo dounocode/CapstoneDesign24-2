@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transcription and Translation Result</title>
+    <style>
+        /* 텍스트 영역의 기본 설정 (처음에는 영어 스크립트만 표시) */
+        #english-text, #korean-text {
+            display: none;
+        }
+        #english-text.active, #korean-text.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Transcription and Translation Result</h1>
+
+    <!-- 언어 선택 버튼 -->
+    <button onclick="showText('english')">영어</button>
+    <button onclick="showText('korean')">한글</button>
+
+    <!-- 영어 텍스트 영역 -->
+    <div id="english-text" class="active">
+        <h2>English Transcription</h2>
+        <p>{{ english_text }}</p>
+    </div>
+
+    <!-- 한국어 텍스트 영역 -->
+    <div id="korean-text">
+        <h2>Korean Translation</h2>
+        <p>{{ korean_text }}</p>
+    </div>
+    
+    <a href="/">Upload another file</a>
+
+    <!-- JavaScript 코드 -->
+    <script>
+        // 텍스트 영역 표시/숨김 함수
+        function showText(language) {
+            // 모든 텍스트 영역을 숨기고 'active' 클래스 제거
+            document.getElementById('english-text').classList.remove('active');
+            document.getElementById('korean-text').classList.remove('active');
+
+            // 선택한 언어의 텍스트만 표시
+            if (language === 'english') {
+                document.getElementById('english-text').classList.add('active');
+            } else if (language === 'korean') {
+                document.getElementById('korean-text').classList.add('active');
+            }
+        }
+
+        // 초기 상태로 영어 텍스트를 표시
+        showText('english');
+    </script>
+</body>
+</html>
+
+
